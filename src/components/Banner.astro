@@ -1,0 +1,16 @@
+---
+import bg from "@/assets/images/bg.jpg";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
+---
+
+<!--  -->
+<div
+  class={`h-1/3 bg-center bg-no-repeat bg-cover mb-2`}
+  style={`background-image: url(${bg.src})`}
+>
+  <div class="h-full flex items-center justify-center flex-col">
+    <!-- title  -->
+    <div class="text-customPrimary text-6xl global-font text-border">{SITE_TITLE}</div>
+    <div class="text-slate-200 mt-2 global-font">{SITE_DESCRIPTION}</div>
+  </div>
+</div>
