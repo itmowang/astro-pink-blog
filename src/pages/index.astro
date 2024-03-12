@@ -4,7 +4,8 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Banner from "../components/Banner.astro";
 import Sidebar from "../components/Sidebar.astro";
-import PostCard from "../components/PostCard.astro"
+import PostCard from "../components/PostCard.astro";
+import RightInfo from "../components/RightInfo.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import "../styles/global.less"
 ---
@@ -17,17 +18,30 @@ import "../styles/global.less"
   <body >
 	<div class="bg-customDarkBg1 h-screen" >
 		<Header />
-		<main class="h-screen">
-			
+		<main class="h-full relative">
 			<Banner/>
 			<!-- Main content -->
-			<div class="flex justify-center">
-				<div class=" w-9/12">
-					<PostCard /> 
+			<div class="flex justify-center"> 
+				<div class="w-10/12 flex relative">
+					<div class="w-1/12  absolute -top-8">
+						<Sidebar/>
+					</div>
+					<div class="w-1/12 ">
+					</div>
+					<div class="w-9/12 mx-5">
+							<PostCard /> 
+							<PostCard /> 
+							<PostCard /> 
+							<PostCard /> 
+							<PostCard /> 
+					</div>
+					<div class="w-2/12  ">
+					</div>
+					<div class="w-2/12  absolute -top-32 right-0">
+						<RightInfo/>
+					</div>
 				</div>
 			</div>
-			
-			<Sidebar/>
 		</main>
 		<Footer />
 	</div>

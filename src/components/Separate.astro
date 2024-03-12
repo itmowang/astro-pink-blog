@@ -1,0 +1,35 @@
+---
+interface Props {
+  text?: string;
+  icon?: string;
+}
+
+const { text,icon="#icon-shutiao" } = Astro.props;
+---
+
+<div
+  class="flex my-2 border-2 p-1 rounded-full border-customPrimary bg-customDarkBg2 justify-between items-center"
+>
+  <div>
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href={icon}></use>
+    </svg>
+  </div>
+  <div class="text-customPrimary text-sm global-font">
+    {text}
+  </div>
+  <div>
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href={icon}></use>
+    </svg>
+  </div>
+</div>
+<style>
+  .icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+</style>

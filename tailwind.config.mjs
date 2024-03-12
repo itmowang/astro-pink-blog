@@ -8,7 +8,7 @@ export default {
 				customSecondary: "rgb(161, 163, 247)",
 				customDarkBg1: "rgb(254,227,225)",
 				customDarkBg2: "rgb(253,201,200)",
-				customDarkBg3: "rgb(214,88,108)",
+				customDarkBg3: "rgb(255,242,238)",
 				customDarkBg3Hover: "rgb(214,88,108)",
 				customContent: "rgb(255,242,238)",
 				customGrayBorder: "rgb(219,163,166)",
