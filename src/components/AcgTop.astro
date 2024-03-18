@@ -1,0 +1,39 @@
+---
+import reimu from "@/assets/images/reimu.png";
+---
+
+<div
+  id="backToTopBtn"
+  class="hidden fixed bottom-0 right-0 rounded-full hover:transition ease-in-out duration-300"
+>
+  <img src={reimu.src} alt="reimu" class="w-48 h-64" />
+</div>
+<script>
+    // Btn ID
+  var btn = document.getElementById("backToTopBtn");
+
+  // 当用户滚动页面时调用函数
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    // 当用户向下滚动 20px 以上时显示按钮
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      btn?.classList.remove("hidden");
+    } else {
+      btn?.classList.add("hidden");
+    }
+  }
+
+  // 点击按钮时平滑滚动到页面顶部
+  btn && btn?.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+</script>

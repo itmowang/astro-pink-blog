@@ -2,6 +2,13 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		screens: {
+			sm: "640px",
+			md: "768px",
+			lg: "1024px",
+			xl: "1350px",
+			"2xl": "1536px",
+		},
 		extend: {
 			colors: {
 				customPrimary: "rgb(141,39,64)",
@@ -17,15 +24,7 @@ export default {
 			fontFamily: {
 				Inter: "Inter",
 			},
-			screens: {
-				xs: "530px",
-				sm: "640px",
-				md: "768px",
-				lg: "1024px",
-				xl: "1280px",
-				xll: "1400px",
-				"2xl": "1536px",
-			},
+			
 		},
 	},
 	plugins: [],
