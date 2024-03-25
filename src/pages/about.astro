@@ -6,7 +6,7 @@ import Banner from "../components/Banner.astro";
 import Sidebar from "../components/Sidebar.astro";
 import PostCard from "../components/PostCard.astro";
 import RightInfo from "../components/RightInfo.astro";
-import AcgTop from "../components/AcgTop.astro";
+import AcgTop from "../components/AcgTop.astro"
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import "../styles/global.less";
 ---
@@ -24,18 +24,14 @@ import "../styles/global.less";
         <!-- Main content -->
         <div class="flex justify-center">
           <div class="w-12/12 lg:w-10/12 flex relative">
-            <div class="w-1/12 absolute -top-8 hidden lg:block">
+            <div class="w-1/12 absolute -top-8 hidden lg:block ">
               <Sidebar />
             </div>
             <div class="w-1/12 hidden lg:block ml-5"></div>
-            <div class="w-12/12 lg:w-9/12">
-              <PostCard />
-              <PostCard />
-              <PostCard />
-              <PostCard />
+            <div class="w-12/12 lg:w-9/12 ">
               <PostCard />
             </div>
-            <div class="w-2/12 hidden lg:block ml-5"></div>
+            <div class="w-2/12 hidden lg:block  ml-5"></div>
             <div class="w-2/12 absolute -top-32 right-0 hidden lg:block">
               <RightInfo />
             </div>
@@ -43,7 +39,7 @@ import "../styles/global.less";
         </div>
       </main>
       <Footer />
-      <AcgTop />
+	<AcgTop/>
     </div>
   </body>
 </html>
